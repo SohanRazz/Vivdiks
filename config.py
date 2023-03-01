@@ -47,7 +47,7 @@ LINK_BYPASS = is_enabled(
 BASE_SITE = os.environ.get("BASE_SITE", "oggylink.com")  # your shortener site domain
 
 # For Admin use
-CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
+CHANNELS = is_enabled((os.environ.get("CHANNELS", "False")), False)
 CHANNEL_ID = (
     [int(i.strip()) for i in os.environ.get("CHANNEL_ID","-1001713432930").split(" ")]
     if os.environ.get("CHANNEL_ID","-1001713432930")
