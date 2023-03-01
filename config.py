@@ -35,7 +35,7 @@ BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "True")), True
 )  # true if forward should be avoided
 IS_PRIVATE = is_enabled(
-    os.environ.get("IS_PRIVATE",)
+    os.environ.get("IS_PRIVATE","True"),"True"
 )  # true for private use and restricting users
 SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "Private"
