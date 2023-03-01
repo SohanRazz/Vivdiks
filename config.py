@@ -82,8 +82,8 @@ REPLIT = (
 )
 
 #  Koyeb Config for Hosting in Koyeb
-KOYEB_USERNAME = os.environ.get("KOYEB_USERNAME", None)  # your koyeb username
-KOYEB_APP_NAME = os.environ.get("KOYEB_APP_NAME", None)  # your koyeb app name
+KOYEB_USERNAME = os.environ.get("KOYEB_USERNAME", "sohanrazz")  # your koyeb username
+KOYEB_APP_NAME = os.environ.get("KOYEB_APP_NAME", "zonal-katleen")  # your koyeb app name
 KOYEB = (
     f"https://{KOYEB_APP_NAME}-{KOYEB_USERNAME}.koyeb.app/"
     if KOYEB_APP_NAME and KOYEB_USERNAME
