@@ -88,7 +88,7 @@ async def help_command(c, m: Message):
         firstname=temp.FIRST_NAME,
         username=temp.BOT_USERNAME,
         repo=SOURCE_CODE,
-        owner="@ask_admin001",
+        owner="@Sohan_Rajpurohit_1",
     )
 
     if WELCOME_IMAGE:
