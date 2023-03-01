@@ -34,9 +34,6 @@ UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL")  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "False")), False
 )  # true if forward should be avoided
-IS_PRIVATE = is_enabled(
-    os.environ.get("IS_PRIVATE", "False"), "False"
-)  # true for private use and restricting users
 SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "Private"
 )  # for upstream repo
