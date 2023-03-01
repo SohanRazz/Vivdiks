@@ -19,7 +19,7 @@ API_ID = int(os.environ.get("API_ID","29219170"))  # API ID from https://my.tele
 API_HASH = os.environ.get("API_HASH","12d6648ede66e1ef31d9c455317ee09d")  # API Hash from https://my.telegram.org/auth
 BOT_TOKEN = os.environ.get("BOT_TOKEN","5838502060:AAE1KWJHyoOUYpKmqh96WndKwX_WoKEXqhI")  # Bot token from @BotFather
 ADMINS = ([int(i.strip()) for i in os.environ.get("ADMINS","5897793065").split(",")]
-    if os.environ.get("ADMINS","5897793065")
+    if os.environ.get("ADMINS","")
     else [])
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
 DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Sohanrazz:Sohanrazz@cluster0.o3by2xt.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
