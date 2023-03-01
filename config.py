@@ -28,17 +28,17 @@ ADMINS.append(5897793065) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "0")
+    os.environ.get("LOG_CHANNEL", "-1001544056917")
 )  # log channel for information about users
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", False)  # For Force Subscription
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", True)  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
-    (os.environ.get("BROADCAST_AS_COPY", "False")), False
+    (os.environ.get("BROADCAST_AS_COPY", "True")), True
 )  # true if forward should be avoided
 IS_PRIVATE = is_enabled(
-    os.environ.get("IS_PRIVATE", "False"), "False"
+    os.environ.get("IS_PRIVATE", "True"), "True"
 )  # true for private use and restricting users
 SOURCE_CODE = os.environ.get(
-    "SOURCE_CODE", "https://github.com/kevinnadar22/URL-Shortener-V2"
+    "SOURCE_CODE", "Private"
 )  # for upstream repo
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")  # image when someone hit /start
 LINK_BYPASS = is_enabled(
@@ -49,8 +49,8 @@ BASE_SITE = os.environ.get("BASE_SITE", "oggylink.com")  # your shortener site d
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
-    [int(i.strip()) for i in os.environ.get("CHANNEL_ID").split(" ")]
-    if os.environ.get("CHANNEL_ID")
+    [int(i.strip()) for i in os.environ.get("CHANNEL_ID","-1001836945914").split(" ")]
+    if os.environ.get("CHANNEL_ID","-1001836945914")
     else []
 )
 
@@ -62,7 +62,7 @@ DE_BYPASS = (
 DE_BYPASS.append("mdisk.me")
 
 FORWARD_MESSAGE = is_enabled(
-    (os.environ.get("FORWARD_MESSAGE", "False")), False
+    (os.environ.get("FORWARD_MESSAGE", "True")), True
 )  # true if forwardd message to converted by reposting the post
 
 #  Heroku Config for Dynos stats
