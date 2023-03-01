@@ -23,8 +23,8 @@ ADMINS = ([int(i.strip()) for i in os.environ.get("ADMINS","5897793065").split("
     else [])
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
 DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Sohanrazz:Sohanrazz@cluster0.o3by2xt.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID"))  # id of the owner
-ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
+OWNER_ID = int(os.environ.get("OWNER_ID","5897793065"))  # id of the owner
+ADMINS.append(5897793065) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
