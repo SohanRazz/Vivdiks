@@ -15,19 +15,14 @@ def is_enabled(value, default):
 
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID"))  # API ID from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH")  # API Hash from https://my.telegram.org/auth
-BOT_TOKEN = os.environ.get("BOT_TOKEN")  # Bot token from @BotFather
-ADMINS = (
-    [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
-    if os.environ.get("ADMINS")
-    else []
-)
-
+API_ID = int(os.environ.get("API_ID","29219170"))  # API ID from https://my.telegram.org/auth
+API_HASH = os.environ.get("API_HASH","12d6648ede66e1ef31d9c455317ee09d"")  # API Hash from https://my.telegram.org/auth
+BOT_TOKEN = os.environ.get("BOT_TOKEN","5996448957:AAE_pEGKdTXcxqcieUkq7CHZkW0QJZZOhxU")  # Bot token from @BotFather
+ADMINS = ([int(i.strip()) for i in os.environ.get("ADMINS","5897793065").split(",")]
+    if os.environ.get("ADMINS","5897793065")
+    else [])
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
-DATABASE_URL = os.environ.get(
-    "DATABASE_URL", None
-)  # mongodb uri from https://www.mongodb.com/
+DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Sohanrazz:Sohanrazz@cluster0.o3by2xt.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
 OWNER_ID = int(os.environ.get("OWNER_ID"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
@@ -49,7 +44,7 @@ WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")  # image when someone hit /s
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
-BASE_SITE = os.environ.get("BASE_SITE", "droplink.co")  # your shortener site domain
+BASE_SITE = os.environ.get("BASE_SITE", "oggylink.com")  # your shortener site domain
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
