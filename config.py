@@ -30,7 +30,7 @@ ADMINS.append(5897793065) if OWNER_ID not in ADMINS else []
 LOG_CHANNEL = int(
     os.environ.get("LOG_CHANNEL", "1001544056917")
 )  # log channel for information about users
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL","-1001713432930")  # For Force Subscription
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL","1001713432930")  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "True")), True
 )  # true if forward should be avoided
@@ -49,8 +49,8 @@ BASE_SITE = os.environ.get("BASE_SITE", "oggylink.com")  # your shortener site d
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
-    [int(i.strip()) for i in os.environ.get("CHANNEL_ID","-1001713432930").split(" ")]
-    if os.environ.get("CHANNEL_ID","-1001713432930")
+    [int(i.strip()) for i in os.environ.get("CHANNEL_ID","1001713432930").split(" ")]
+    if os.environ.get("CHANNEL_ID","1001713432930")
     else []
 )
 
