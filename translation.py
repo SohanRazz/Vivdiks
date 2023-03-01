@@ -40,7 +40,7 @@ Useful commands:
 - /help: Send this message; I'll tell you more about myself!
 - /batch -100xxx: To shorten or convert all posts in your channel
 
-If you have any bugs or questions about how to use me, check out my [website]({repo}) or contact {owner}.
+If you have any bugs or questions about how to use me, contact @Sohan_Rajpurohit_1.
 
 Available commands:
 
