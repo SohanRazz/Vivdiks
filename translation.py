@@ -40,7 +40,7 @@ Useful commands:
 - /help: Send this message; I'll tell you more about myself!
 - /batch -100xxx: To shorten or convert all posts in your channel
 
-If you have any bugs or questions about how to use me, check out my [website]({repo}) or contact {owner}.
+If you have any bugs or questions about how to use me,contact @Sohan_Rajpurohit_1.
 
 Available commands:
 
@@ -64,9 +64,9 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/ask_admin001)
-`📢 Support:` [Talk Bot](https://t.me/ask_admin001)
-`🌐 Source Code:` [GitHub](https://github.com/kevinnadar22/URL-Shortener-V2/)
+`👨‍💻 Developer:` [Dev](t.me/Sohan_Rajpurohit_1)
+`📢 Support:` [Talk Bot](https://t.me/Sohan_Rajpurohit_1)
+`🌐 Source Code:` [Private](Private)
 """
 
 
