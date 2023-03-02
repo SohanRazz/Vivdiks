@@ -20,7 +20,7 @@ API_HASH = os.environ.get("API_HASH")  # API Hash from https://my.telegram.org/a
 BOT_TOKEN = os.environ.get("BOT_TOKEN")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
-    if os.environ.get("ADMINS",)
+    if os.environ.get("ADMINS")
     else []
 )
 
